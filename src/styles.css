@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.btn {
+  color: black;
+  border: 2px solid teal;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.btn:active {
+  color: white;
+}
+
+.btn:hover {
+  background-color: teal;
+  opacity: 0.9;
+}

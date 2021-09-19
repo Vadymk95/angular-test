@@ -3,5 +3,13 @@
   width: 800px;
   margin: 0 auto;
   padding: 10px;
-  border: 1px solid grey;
+  border: 2px solid teal;
+}
+
+.block-title {
+  margin-bottom: 10px;
+}
+
+.block-line {
+  margin-bottom: 20px;
 }

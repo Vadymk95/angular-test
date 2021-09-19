@@ -1,0 +1,33 @@
+<div class="card">
+  <h2
+    [ngStyle]="{
+      color: card.title.length < 5 ? 'lightblue' : 'green',
+      fontWeight: card.title.length > 7 ? 'normal' : 'bold'
+    }"
+  >
+    {{ card.title }}
+  </h2>
+  <p>{{ card.text }}</p>
+  <div>
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="card.title = 'inline new title'">Change title 2</button>
+  </div>
+  <p
+    [class.blue]="textColor === 'blue'"
+    [class.red]="textColor === 'red'"
+    [class.green]="textColor === 'green'"
+  >
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quibusdam
+    impedit vitae debitis tempore soluta?
+  </p>
+
+  <div>
+    <button (click)="textColor = 'blue'">Set Blue</button>
+    <button (click)="textColor = 'red'">Set Red</button>
+    <button (click)="textColor = 'green'">Set Green</button>
+  </div>
+
+  <div>
+    <input type="text" [(ngModel)]="title" />
+  </div>
+</div>
